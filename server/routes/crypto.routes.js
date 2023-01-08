@@ -24,7 +24,7 @@ const tokens = getTokens();
 // @param 
 //      token: token name (if not setted, all tokens)
 //      date: timestamp (if not setted, today's timestamp)
-const getTokenSum = (token = tokens, date = new Date().getTime()) => {
+const getTokenSum = (token, date = new Date().getTime()) => {
     let sum = 0;
     let localData = data.filter(item => item.type.trim().toUpperCase() === token && item.timestrap * 1000 <= date);
 
