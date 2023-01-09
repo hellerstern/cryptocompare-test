@@ -4,7 +4,7 @@ const cc = require('cryptocompare');
 const dotenv = require("dotenv");
 dotenv.config();
 
-cc.setApiKey(process.env.API_KEY || "6db069e065e19a41dbcff84e48185de35ee957455b36b521b7dd671b1a5cf39e");
+cc.setApiKey(process.env.API_KEY);
 let data = require('../constants/data.json');
 data = Object.assign(data.data.reverse());
 
